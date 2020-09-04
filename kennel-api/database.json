@@ -1,76 +1,82 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-            "id": 2,
-            "name": "Pumpkin",
-            "breed": "Corgi",
-            "customerId": 2,
-            "locationId": 1
-        },
-        {
-            "id": 1,
-            "name": "Ryan",
-            "breed": "Labrador Retriever",
-            "customerId": 3,
-            "locationId": 2
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
-        },
-        {
-            "id": 2,
-            "name": "Samantha Maas",
-            "address": "524 Main Street"
-        },
-        {
-            "id": 1,
-            "name": "Zach Maas",
-            "address": "8458 South Avenue"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Jeremy Bakker",
-            "locationId": 2
-        },
-        {
-            "id": 2,
-            "name": "Virgina Moses",
-            "locationId": 2
-        },
-        {
-            "id": 3,
-            "name": "Cody Collins",
-            "locationId": 1
-        },
-        {
-            "id": 4,
-            "name": "Mackenzie Robbins",
-            "locationId": 1
-        }
-],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 2,
+      "name": "Pumpkin",
+      "breed": "Corgi",
+      "customerId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 1,
+      "name": "Ryan",
+      "breed": "Labrador Retriever",
+      "customerId": 3,
+      "locationId": 2
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hannah Hall",
+      "address": "7002 Chestnut Ct"
+    },
+    {
+      "id": 2,
+      "name": "Samantha Maas",
+      "address": "524 Main Street"
+    },
+    {
+      "id": 1,
+      "name": "Zach Maas",
+      "address": "8458 South Avenue"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Jeremy Bakker",
+      "locationId": 2
+    },
+    {
+      "id": 2,
+      "name": "Virgina Moses",
+      "locationId": 2
+    },
+    {
+      "id": 3,
+      "name": "Cody Collins",
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Mackenzie Robbins",
+      "locationId": 1
+    },
+    {
+      "name": "Sam",
+      "locationId": 1,
+      "animalId": 2,
+      "id": 5
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
 }

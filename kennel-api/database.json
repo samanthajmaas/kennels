@@ -30,13 +30,14 @@
     },
     {
       "id": 2,
-      "name": "Samantha Maas",
-      "address": "524 Main Street"
-    },
-    {
-      "id": 1,
       "name": "Zach Maas",
       "address": "8458 South Avenue"
+    },
+    {
+      "email": "samanthajmaas@gmail.com",
+      "password": "Bikes689",
+      "name": "Samantha Maas",
+      "id": 3
     }
   ],
   "employees": [

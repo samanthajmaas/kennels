@@ -5,7 +5,7 @@ import "./Animals.css"
 import {CustomerContext} from "../customer/CustomerProvider"
 import { LocationContext } from "../location/LocationProvider"
 
-export const AnimalList = () => {
+export const AnimalList = (props) => {
     const { animals, getAnimals } = useContext(AnimalContext)
     const { customers, getCustomers} = useContext(CustomerContext)
     const { locations, getLocations} = useContext(LocationContext)
@@ -18,6 +18,10 @@ export const AnimalList = () => {
 
     return (
         <div className="animals">
+            <h1> Animals </h1>
+            <button onClick={() => props.history.push("/animals/create")}>
+                Make Appointment
+            </button>
             {
                 animals.map(animal => {
                     const owner = customers.find(customer => customer.id === animal.customerId) || {}

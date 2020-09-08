@@ -20,6 +20,13 @@
       "breed": "Labrador Retriever",
       "customerId": 3,
       "locationId": 2
+    },
+    {
+      "name": "Porky",
+      "breed": "Rat Terrier",
+      "ownerId": 1,
+      "locationId": 2,
+      "id": 3
     }
   ],
   "customers": [

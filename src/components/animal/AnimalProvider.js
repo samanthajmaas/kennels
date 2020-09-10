@@ -1,9 +1,10 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 
 export const AnimalContext = React.createContext()
 
 export const AnimalProvider = (props) => {
     const [animals, setAnimals] = useState([])
+    const [ searchTerms, setTerms ] = useState("")
 
     const getAnimals = () => {
         return fetch("http://localhost:8088/animals")
@@ -11,9 +12,14 @@ export const AnimalProvider = (props) => {
             .then(setAnimals)
     }
 
+    const getAnimalById = (id) => {
+        return fetch(`http://localhost:8088/animals/${id}?_expand=location&_expand=customer`)
+            .then(res => res.json())
+    }
+
     const addAnimals = animal => {
         return fetch("http://localhost:8088/animals", {
-            method:"POST",
+            method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
@@ -24,7 +30,7 @@ export const AnimalProvider = (props) => {
 
     return (
         <AnimalContext.Provider value={{
-            animals, addAnimals, getAnimals
+            animals, addAnimals, getAnimals, getAnimalById, searchTerms, setTerms
         }}>
             {props.children}
         </AnimalContext.Provider>

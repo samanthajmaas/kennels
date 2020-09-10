@@ -1,12 +1,20 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Frisbee",
-      "breed": "Schnauzer",
+      "name": "Ryan",
+      "breed": "Lab",
+      "locationId": 1,
+      "treatment": "cleaning",
+      "customerId": 3,
+      "id": 3
+    },
+    {
+      "name": "Booger",
+      "breed": "Greyhound",
       "locationId": 2,
-      "treatment": "nail trimming and groom",
-      "customerId": 3
+      "treatment": "daf",
+      "customerId": 3,
+      "id": 4
     }
   ],
   "customers": [
@@ -27,7 +35,26 @@
       "id": 3
     }
   ],
-  "employees": [],
+  "employees": [
+    {
+      "name": "Sam",
+      "locationId": 1,
+      "animalId": 3,
+      "id": 1
+    },
+    {
+      "name": "Karen",
+      "locationId": 1,
+      "animalId": 4,
+      "id": 3
+    },
+    {
+      "name": "Georiga",
+      "locationId": 1,
+      "animalId": 3,
+      "id": 4
+    }
+  ],
   "locations": [
     {
       "id": 1,

@@ -2,31 +2,11 @@
   "animals": [
     {
       "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle",
-      "customerId": 1,
-      "locationId": 2
-    },
-    {
-      "id": 2,
-      "name": "Pumpkin",
-      "breed": "Corgi",
-      "customerId": 2,
-      "locationId": 1
-    },
-    {
-      "id": 3,
-      "name": "Ryan",
-      "breed": "Labrador Retriever",
-      "customerId": 3,
-      "locationId": 2
-    },
-    {
-      "name": "Porky",
-      "breed": "Rat Terrier",
-      "ownerId": 1,
+      "name": "Frisbee",
+      "breed": "Schnauzer",
       "locationId": 2,
-      "id": 4
+      "treatment": "nail trimming and groom",
+      "customerId": 3
     }
   ],
   "customers": [
@@ -47,38 +27,7 @@
       "id": 3
     }
   ],
-  "employees": [
-    {
-      "id": 1,
-      "name": "Jeremy Bakker",
-      "locationId": 2,
-      "animalId": 1
-    },
-    {
-      "id": 2,
-      "name": "Virgina Moses",
-      "locationId": 2,
-      "animalId": 3
-    },
-    {
-      "id": 3,
-      "name": "Cody Collins",
-      "locationId": 1,
-      "animalId": 4
-    },
-    {
-      "id": 4,
-      "name": "Mackenzie Robbins",
-      "locationId": 1,
-      "animalId": 1
-    },
-    {
-      "name": "Sam",
-      "locationId": 1,
-      "animalId": 2,
-      "id": 5
-    }
-  ],
+  "employees": [],
   "locations": [
     {
       "id": 1,

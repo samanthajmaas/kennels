@@ -36,7 +36,7 @@ export const EmployeeForm = (props) => {
             but rather `.current.value` now in React.
         */
         const locationId = parseInt(location.current.value)
-        const animalId = parseInt(animal.current.value)
+        const animalId = animal.current.value
 
         if (locationId === 0) {
             window.alert("Please select a location")

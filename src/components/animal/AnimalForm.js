@@ -62,18 +62,18 @@ export const AnimalForm = (props) => {
                     id: animal.id,
                     name: animal.name,
                     breed: animal.breed,
-                    locationId: locationId,
-                    treatment: animal.treatment,
-                    customerId: parseInt(localStorage.getItem("kennel_customer"))
+                    location_id: locationId,
+                    status: animal.status,
+                    customer_id: parseInt(localStorage.getItem("kennel_customer"))
                 })
                     .then(() => props.history.push("/animals"))
             } else {
                 addAnimals({
                     name: animal.name,
                     breed: animal.breed,
-                    locationId: locationId,
-                    treatment: animal.treatment,
-                    customerId: parseInt(localStorage.getItem("kennel_customer"))
+                    location_id: locationId,
+                    status: animal.status,
+                    customer_id: parseInt(localStorage.getItem("kennel_customer"))
                 })
                     .then(() => props.history.push("/animals"))
             }
@@ -124,10 +124,10 @@ export const AnimalForm = (props) => {
             </fieldset>
             <fieldset>
                 <div className="form-group">
-                    <label htmlFor="treatment">Treatments: </label>
-                    <textarea type="text" name="treatment" className="form-control"
+                    <label htmlFor="treatment">Status: </label>
+                    <textarea type="text" name="status" className="form-control"
                         proptype="varchar"
-                        value={animal.treatment}
+                        value={animal.status}
                         onChange={handleControlledInputChange}>
                     </textarea>
                 </div>

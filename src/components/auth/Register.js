@@ -16,7 +16,7 @@ export const Register = (props) => {
     }
 
     const handleRegister = (e) => {
-        e.preventDefault()
+        e.preventDefault() 
 
         if (password.current.value === verifyPassword.current.value) {
             existingUserCheck()
